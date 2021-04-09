@@ -13,9 +13,9 @@ void setup() {
 
 void loop() {
   if (CheckPin.isPressed()) {
-    SOut.beepOut(1500, 5);
+    SOut.beepOut(1500, 15);
   }
   M5.update();
-  CheckPin.read(); // ボタンのステータスを更新、M5.update()で呼ばれるべき処理
-  delay(1);
+  CheckPin.read(); // ピンのステータスを更新、M5.update()で呼ばれる処理
+  delay(10);
 }
